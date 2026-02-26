@@ -11,7 +11,6 @@ Aplikasi yang saya buat bertema Daftar Belanja. Aplikasi ini digunakan untuk mem
 Di dalam aplikasi ini, pengguna bisa menambahkan data barang berupa nama barang, jumlah, dan kategori. Semua data yang sudah dimasukkan akan langsung tampil di halaman utama dalam bentuk daftar.
 
 Aplikasi ini dibuat menggunakan Flutter dan terdiri dari beberapa file utama, yaitu:
-
 - main.dart sebagai file utama untuk menjalankan aplikasi,
 - HomePage untuk menampilkan daftar barang,
 - FormPage untuk menambahkan atau mengedit data,
@@ -20,7 +19,6 @@ Aplikasi ini dibuat menggunakan Flutter dan terdiri dari beberapa file utama, ya
 ## Fitur Aplikasi
 
 Beberapa fitur yang tersedia dalam aplikasi ini antara lain:
-
 1. Menambahkan Barang
 Pengguna dapat menekan tombol tambah (+) di pojok kanan bawah untuk masuk ke halaman form. Setelah mengisi semua data dan menekan tombol simpan, data akan langsung muncul di halaman utama.
 2. Menampilkan Daftar Barang
@@ -30,10 +28,9 @@ Jika ingin mengubah data, pengguna bisa menekan ikon edit pada item tertentu. Da
 4. Menghapus Barang
 Pengguna juga bisa menghapus data dengan menekan ikon delete. Data akan langsung hilang dari daftar.
 
-# Widget yang Digunakan
+## Widget yang Digunakan
 
 Dalam pembuatan aplikasi ini, saya menggunakan beberapa widget utama dari Flutter, seperti:
-
 - MaterialApp untuk mengatur struktur dasar aplikasi.
 - Scaffold sebagai kerangka tampilan halaman.
 - AppBar untuk menampilkan judul aplikasi.
@@ -47,7 +44,6 @@ Dalam pembuatan aplikasi ini, saya menggunakan beberapa widget utama dari Flutte
 - setState() untuk memperbarui tampilan ketika data berubah
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-
 
 ## 1. Tampilan beranda
 
@@ -71,8 +67,7 @@ Intinya, halaman ini berfungsi untuk:
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-
-# 2. Tampilan ketika ingin melakukan proses penginputan daftar belanja
+## 2. Tampilan ketika ingin melakukan proses penginputan daftar belanja
 
 <img width="324" height="699" alt="image" src="https://github.com/user-attachments/assets/03cf2ecf-c250-43bc-9957-78619d4dc0fc" />
 
@@ -93,7 +88,7 @@ Kalau tombol Simpan ditekan dalam kondisi kosong, aplikasi tidak akan menyimpan 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-# 3. TAmpilan saat melakukan penginputan daftar belanja
+## 3. Tampilan saat melakukan penginputan daftar belanja
 
 <img width="320" height="699" alt="image" src="https://github.com/user-attachments/assets/cae842c3-5eb4-4823-b9f9-c865d9803f8b" />
 
@@ -111,6 +106,7 @@ Data akan dikirim kembali ke halaman utama.
 Data tersebut akan langsung muncul dalam daftar belanja.
 Halaman akan kembali ke Home secara otomatis.
 
+## Tampilan daftar belanja yang telah dilakukan penginputan 
 
 <img width="320" height="698" alt="image" src="https://github.com/user-attachments/assets/0b31c6ce-72ef-4427-8170-06c96c96471a" />
 
@@ -130,15 +126,14 @@ Contoh yang terlihat:
 - sosis goreng Jumlah: 10 | Kategori: makanan ringan
 
 Di sebelah kanan kartu ada dua ikon:
-
-pensil itu edit untuk mengubah data
-
-keranjang sampah itu hapus untuk menghapus data
+- pensil itu edit untuk mengubah data
+- keranjang sampah itu hapus untuk menghapus data
 
 Tampilan halaman ini menunjukkan kondisi ketika pengguna baru menambahkan satu barang.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-# 4.Tampilan Halaman daftar belanja yang telah ditambahkan
+
+## 4.Tampilan daftar belanja yang telah ditambahkan
 
 <img width="323" height="697" alt="image" src="https://github.com/user-attachments/assets/72a5f0b1-e490-4c46-b4b8-cfe0992dcd95" />
 
@@ -156,10 +151,89 @@ Yang bisa diperhatikan:
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+## 5. Tampilan daftar belanja sebelum diupdate
+
 <img width="323" height="697" alt="image" src="https://github.com/user-attachments/assets/72a5f0b1-e490-4c46-b4b8-cfe0992dcd95" />
+
+Di halaman ini terlihat daftar belanja yang sudah berisi tiga item:
+- sosis goreng
+- nasi goreng
+- thai tea
+
+Setiap item ditampilkan dalam bentuk kartu agar terlihat rapi. Di dalamnya ada informasi:
+- Nama barang
+- Jumlah
+- Kategori
+
+Di sebelah kanan setiap kartu ada dua ikon:
+- pensil untuk edit atau mengubah data
+- keranjang sampah untuk hapus →atau menghapus data
+
+Karena ini proses Update, maka langkahnya dimulai saat pengguna menekan tombol Edit, misalnya pada item thai tea.
+
+## Halaman ini adalah proses untuk melakukan update pada isi daftar belanja
+
 <img width="323" height="701" alt="image" src="https://github.com/user-attachments/assets/c82fa118-bb4c-498b-8c74-e72857cf0617" />
+
+Setelah tombol edit ditekan, pengguna diarahkan ke halaman Edit Barang.
+
+Di halaman ini:
+- Form sudah otomatis terisi dengan data lama.
+- Pengguna tinggal mengubah bagian yang diperlukan.
+- Ada tombol Simpan untuk menyimpan perubahan.
+
+Contohnya:
+- Nama barang diubah dari thai tea menjadi matcha.
+- Jumlah diubah dari 10 menjadi 15.
+- Kategori tetap minuman.
+
+Artinya, sistem berhasil mengambil data sebelumnya dan menampilkannya di form, jadi pengguna tidak perlu mengetik ulang dari awal.
+
+Setelah selesai mengubah, pengguna dapat menekan tombol Simpan.
+
+## Halaman ini merupakan daftar belanja yang telah diupdate
+
 <img width="324" height="702" alt="image" src="https://github.com/user-attachments/assets/90b9e55c-43c2-4a67-bf1a-da3e270660ac" />
 
+Setelah disimpan, pengguna kembali ke halaman Daftar Belanja.
+
+Sekarang data yang tadi diubah sudah tampil dengan informasi terbaru:
+- matcha
+- Jumlah: 15
+- Kategori: minuman
+
+daftar belanja telah diupdate atau telah diperbarui
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+## 6. Tampilan daftar belanja sebelum didelete
 
 <img width="324" height="702" alt="image" src="https://github.com/user-attachments/assets/90b9e55c-43c2-4a67-bf1a-da3e270660ac" />
+
+Pada tampilan, daftar belanja masih berisi tiga item:
+- sosis goreng
+- nasi goreng
+- matcha
+
+Di setiap item ada dua ikon di sebelah kanan:
+- pensil untuk edit
+- keranjang sampah untuk hapus
+
+Kalau pengguna ingin menghapus salah satu barang, misalnya sosis goreng, cukup tekan ikon keranjang sampah di sampingnya.
+
+## Tampilan daftar belanja sesudah didelete 
+
 <img width="323" height="702" alt="image" src="https://github.com/user-attachments/assets/14b44e11-2a6c-42b9-a0e2-e4c596a1050f" />
+
+Pada tampilan kedua terlihat bahwa sosis goreng sudah tidak ada lagi.
+
+Sekarang hanya tersisa:
+- nasi goreng
+- matcha
+
+Artinya, data benar-benar terhapus dari daftar, Jumlah item berkurang dan tampilan langsung menyesuaikan secara otomatis.
+
+Tidak perlu refresh atau keluar masuk aplikasi. Begitu tombol hapus ditekan, daftar langsung diperbarui.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
