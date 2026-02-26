@@ -24,9 +24,9 @@ Pengguna dapat menekan tombol tambah (+) di pojok kanan bawah untuk masuk ke hal
 2. Menampilkan Daftar Barang
 Semua barang yang sudah ditambahkan akan ditampilkan dalam bentuk list. Setiap item menampilkan nama barang, jumlah, dan kategori.
 3. Mengedit Barang
-Jika ingin mengubah data, pengguna bisa menekan ikon edit pada item tertentu. Data lama akan otomatis muncul di form, lalu bisa diperbarui dan disimpan kembali.
+Jika ingin mengubah data, pengguna bisa menekan ikon pensil pada item tertentu. Data lama akan otomatis muncul di form, lalu bisa diperbarui dan disimpan kembali.
 4. Menghapus Barang
-Pengguna juga bisa menghapus data dengan menekan ikon delete. Data akan langsung hilang dari daftar.
+Pengguna juga bisa menghapus data dengan menekan ikon keranjang sampah. Data akan langsung hilang dari daftar.
 
 ## Widget yang Digunakan
 
